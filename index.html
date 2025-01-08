@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- CSS -->
+<link rel="stylesheet" href="css/main.css">
+<!-- Favicon -->
+<link rel="shortcut icon" href="images/logo-black.png" type="image/x-icon">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Remix Icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css"
+    integrity="sha512-6p+GTq7fjTHD/sdFPWHaFoALKeWOU9f9MPBoPnvJEWBkGS4PKVVbCpMps6IXnTiXghFbxlgDE8QRHc3MU91lJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<title>Julia || Portfolio</title>
+
+<body>
+    <!-- Header -->
+    <header id="navbar" class="sticky top-0 z-50 duration-300">
+        <nav class="relative container flex justify-between items-center">
+            <div class="py-5">
+                <img src="images/logo-black.png" alt="logo" id="logo"
+                    class="w-10 md:w-14 h-100 rounded-full object-cover">
+                <img src="images/logo-white.png" alt="white-logo" id="white-logo"
+                    class="w-10 md:w-14 h-100 rounded-full object-cover hidden">
+            </div>
+            <div id="nav-menu"
+                class="hidden absolute top-0 left-0 bg-primaryColor w-full py-24 lg:block lg:bg-transparent lg:static lg:py-0 lg:border-none lg:w-auto lg:ml-auto">
+                <ul class="flex flex-col items-center text-center gap-8 lg:flex-row lg:gap-5">
+                    <li>
+                        <a href="#quality_services" class="nav-link">Services</a>
+                    </li>
+                    <li>
+                        <a href="#recent_works" class="nav-link">Works</a>
+                    </li>
+                    <li>
+                        <a href="#exp_edu" class="nav-link">Resume</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+
+                    <li>
+                        <a href="images/Profile.pdf" download="JuliaEkaYanti_Resume.pdf">
+                            <button class="btn ml-10">
+                                <span class="z-10">Hire Me!</span>
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+                <div id="nav-close"
+                    class="absolute top-6 right-3 md:right-8 text-whiteColor text-3xl cursor-pointer lg:hidden">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <div class="flex items-center gap-5">
+                <i class="ri-moon-line cursor-pointer ml-4 text-2xl" id="theme-toggle"></i>
+
+                <div id="hamburger" class="lg:hidden">
+                    <i class="ri-menu-2-line cursor-pointer text-2xl"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Main -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="relative py-15">
+            <!-- blob -->
+            <div
+                class="absolute right-0 top-[-20%] w-80 bg-primaryColorLight mix-blend-screen rounded-full blur-[150px] opacity-50">
+            </div>
+
+            <div class="container">
+                <!-- bg image -->
+                <!-- <div class="hidden md:block absolute top-0 left-[30%] lg:left-[35%] animate-scaleAnimation">
+                    <p
+                        class="font-Londrina text-[400px] lg:text-[450px] text-primaryColorLight uppercase -z-10 opacity-5 ">
+                        hi</p>
+                </div> -->
+
+                <!-- hero content -->
+                <div class="flex items-center gap-5">
+                    <div class="hero__content space-y-2 md:w-1/2">
+                        <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold">I am Julia</h3>
+                        <h1>
+                            <span class="title">Backend Developer</span>
+                            <!-- <br>
+                            <span class="title">Web3 Enthusiast</span> -->
+                        </h1>
+
+                        <div class="hero__image relative flex justify-center md:hidden">
+                            <!-- blob -->
+                            <div
+                                class="absolute left-0 bottom-0 top-[-20%] w-80 bg-primaryColorLight mix-blend-screen rounded-full blur-[150px] opacity-50">
+                            </div>
+
+                            <img src="images/person.jpg" alt="person" class="rounded-[38px] my-10 max-w-60">
+                        </div>
+
+                        <p class="max-w-xl text-xl pb-5">With a growing enthusiasm for Web3 technologies. I specialize
+                            in transforming complex challenges into elegant solutions
+                            through robust backend architecture. While my foundation lies in traditional backend
+                            development, I'm actively exploring
+                            and learning about blockchain and decentralized technologies. I'm excited about the future
+                            of Web3 and am on a journey
+                            to contribute to this revolutionary space while continuing to deliver scalable, secure
+                            applications that make a real
+                            impact.</p>
+
+                        <div class="flex items-center flex-wrap gap-5">
+                            <a href="images/Profile.pdf" download="JuliaEkaYanti_Resume.pdf">
+                                <button class="btn_outline">
+                                    Download CV <i class="fa-solid fa-download"></i>
+                                </button>
+                            </a>
+
+                            <div class="flex items-center gap-5">
+                                <a href="https://x.com/jul143k4">
+                                    <div class="social-icon">
+                                        <i class="fa-brands fa-twitter z-10"></i>
+                                    </div>
+                                </a>
+
+                                <a href="https://www.linkedin.com/in/julia-eka-yanti-723329209/">
+                                    <div class="social-icon">
+                                        <i class="fa-brands fa-linkedin-in z-10"></i>
+                                    </div>
+                                </a>
+
+                                <a href="https://t.me/62859106840999">
+                                    <div class="social-icon">
+                                        <i class="fa-brands fa-telegram z-10"></i>
+                                    </div>
+                                </a>
+
+                                <a href="https://github.com/Devjul14">
+                                    <div class="social-icon">
+                                        <i class="fa-brands fa-github z-10"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- hero image -->
+                    <div class="hero__image relative hidden md:w-1/2 md:flex">
+                        <!-- blob -->
+                        <div
+                            class="absolute left-0 bottom-0 top-[-20%] w-80 bg-primaryColorLight mix-blend-screen rounded-full blur-[150px] opacity-50">
+                        </div>
+
+                        <img src="images/person.jpg" alt="person"
+                            class="my-10 md:w-full lg:max-w-80 lg:ml-32 duration-300 origin-center rotate-[4.5deg] border-2 border-primaryColor rounded-[38px] hover:rotate-0 hover:border-primaryColorLight">
+                    </div>
+                </div>
+
+                <!-- hero footer -->
+                <div class="hero__footer grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 py-10">
+                    <div class="flex items-center gap-3">
+                        <p class="text-5xl lg:text-6xl font-bold">4</p>
+                        <p>
+                            Year of <br> Experience
+                        </p>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <p class="text-5xl lg:text-6xl font-bold">5+</p>
+                        <p>
+                            Project <br> Completed
+                        </p>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <p class="text-5xl lg:text-6xl font-bold">4</p>
+                        <p>
+                            Happy <br> Company
+                        </p>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <p class="text-5xl lg:text-6xl font-bold">2</p>
+                        <p>
+                            Own <br> Project
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- My Quality Services -->
+        <section id="quality_services" class="bg-sectionColor dark:bg-darkSectionColor">
+            <div class="container">
+                <div class="service__top flex flex-col items-center gap-5 text-center">
+                    <h2 class="subtitle">My Quality Services</h2>
+                    <p class="max-w-2xl">Delivering excellence through every service, from database architecture to API
+                        development and comprehensive
+                        documentation. I'm committed to providing solutions that drive your business forward.</p>
+                </div>
+
+                <!-- list section -->
+                <div class="my-10">
+                    <!-- item 1 -->
+                    <div class="service__item">
+                        <div class="text-xl font-bold flex items-center gap-3 md:text-2xl md:w-[40%]">
+                            <p class="text-primaryColorLight hover:text-whiteColor">01</p>
+                            <p>Design Database Architecture
+                            </p>
+                        </div>
+
+                        <div class="ml-auto text-2xl origin-center rotate-45 md:order-last">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+
+                        <div>
+                            <p class="md:max-w-[330px] lg:max-w-md xl:max-w-lg">I design and implement high-performance
+                                database systems that scale. From complex data modeling to optimization and
+                                security implementation, I ensure your data infrastructure is built for growth and
+                                efficiency.</p>
+                        </div>
+                    </div>
+
+                    <!-- item 2 -->
+                    <div class="service__item">
+                        <div class="text-xl font-bold flex items-center gap-3 md:text-2xl md:w-[40%]">
+                            <p class="text-primaryColorLight hover:text-whiteColor">02</p>
+                            <p>Web Development Solutions</p>
+                        </div>
+
+                        <div class="ml-auto text-2xl origin-center rotate-45 md:order-last">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+
+                        <div>
+                            <p class="md:max-w-[330px] lg:max-w-md xl:max-w-lg">Specializing in robust backend systems,
+                                I create seamless integrations and powerful APIs that drive modern web
+                                applications. My focus is on building maintainable, secure, and scalable solutions that
+                                adapt to your business needs.</p>
+                        </div>
+                    </div>
+
+                    <!-- item 03 -->
+                    <div class="service__item">
+                        <div class="text-xl font-bold flex items-center gap-3 md:text-2xl md:w-[40%]">
+                            <p class="text-primaryColorLight hover:text-whiteColor">03</p>
+                            <p>REST API Development</p>
+                        </div>
+
+                        <div class="ml-auto text-2xl origin-center rotate-45 md:order-last">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+
+                        <div>
+                            <p class="md:max-w-[330px] lg:max-w-md xl:max-w-lg">I develop comprehensive REST APIs with
+                                clear documentation, secure authentication, and optimal performance. My APIs are
+                                built with scalability in mind, featuring thorough testing and industry-standard
+                                security practices."</p>
+                        </div>
+                    </div>
+
+                    <!-- item 4 -->
+                    <div class="service__item">
+                        <div class="text-xl font-bold flex items-center gap-3 md:text-2xl md:w-[40%]">
+                            <p class="text-primaryColorLight hover:text-whiteColor">04</p>
+                            <p>Technical Documentation</p>
+                        </div>
+
+                        <div class="ml-auto text-2xl origin-center rotate-45 md:order-last">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+
+                        <div class="md:max-w-[330px] lg:max-w-md xl:max-w-lg">
+                            <p>Clear, comprehensive documentation is crucial for any project's success. I create
+                                detailed technical documentation, API
+                                guides, and system architectures that enable smooth development processes and easy
+                                maintenance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- My Recent Work -->
+        <section id="recent_works">
+            <div class="container">
+                <div class="recent_works_top flex flex-col items-center gap-5 text-center">
+                    <h2 class="subtitle pt-28">My Recent Work</h2>
+                    <p class="max-w-2xl">Showcasing recent projects that demonstrate technical excellence and practical
+                        impact. Each implementation reflects my
+                        dedication to creating robust, efficient solutions that solve real business challenges.</p>
+                </div>
+
+                <div
+                    class="recent_works_tabs relative w-max mx-auto my-10 h-10 text-xs grid grid-cols-4 items-center px-[3px] rounded-full
+                            bg-sectionColor dark:bg-darkSectionColor border border-primaryColor overflow-hidden transition md:h-12 md:text-base">
+
+                    <!-- indicator -->
+                    <div
+                        class="indicator absolute h-9 my-auto top-0 bottom-0 left-0 rounded-full bg-primaryColorLight md:h-11">
+                    </div>
+
+                    <button class="tab relative block h-8 px-3 rounded-full text-whiteColor md:h-10 md:px-6"
+                        data-tabs="all">All</button>
+                    <button class="tab relative block h-8 px-3 rounded-full md:h-10 md:px-6"
+                        data-tabs="app">Apps</button>
+                    <button class="tab relative block h-8 px-3 rounded-full md:h-10 md:px-6"
+                        data-tabs="branding">Branding</button>
+                    <button class="tab relative block h-8 px-3 rounded-full md:h-10 md:px-6" data-tabs="design">Design
+                    </button>
+                </div>
+
+                <div class="mt-6 relative rounded-3xl mb-24">
+                    <!-- blob -->
+                    <div
+                        class="absolute top-1/2 left-1/2 transform-tr
+                                -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-primaryColorLight mix-blend-screen rounded-full blur-[150px] opacity-50">
+
+                    </div>
+
+                    <ul class="grid grid-cols-1 gap-5 lg:gap-10 md:grid-cols-2">
+                        <li
+                            class="work_card app relative bg-sectionColor dark:bg-darkSectionColor p-5 rounded-2xl border border-transparent hover:border-primaryColor duration-300 overflow-hidden lg:p-8">
+                            <img src="images/fulhive.png" alt="recent works" class="rounded-2xl w-full">
+
+                            <div class="absolute left-0 right-0 bottom-[-100%] p-5 lg:p-8">
+                                <div
+                                    class="flex items-center justify-between bg-gradient-to-r from-primaryColorLight to-primaryColor text-whiteColor p-5 rounded-t-2xl">
+                                    <div>
+                                        <p class="text-2xl lg:text-3xl font-bold">Fulhive</p>
+                                        <p>
+                                            A web application that streamlines the storage and organization of goods in
+                                            rented warehouse spaces. It supports two
+                                            main user roles: Warehouse Renters, who are warehouse owners managing rented
+                                            spaces, tracking activities, and
+                                            facilitating seamless transactions with sellers; and Sellers, who store
+                                            goods sourced from marketplaces like Shopee,
+                                            Lazada, and TikTok. The platform allows sellers to organize goods, track
+                                            inventory, monitor shipments, and integrate
+                                            marketplace transactions efficiently.</p>
+                                    </div>
+
+                                    <div class="text-2xl rotate-45">
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li
+                            class="work_card app relative bg-sectionColor dark:bg-darkSectionColor p-5 rounded-2xl border border-transparent hover:border-primaryColor duration-300 overflow-hidden lg:p-8">
+                            <img src="images/apdcam.png" alt="recent works" class="rounded-2xl w-full">
+
+                            <div class="absolute left-0 right-0 bottom-[-100%] p-5 lg:p-8">
+                                <div
+                                    class="flex items-center justify-between bg-gradient-to-r from-primaryColorLight to-primaryColor text-whiteColor p-5 rounded-t-2xl">
+                                    <div>
+                                        <p class="text-2xl lg:text-3xl font-bold">APDCAM</p>
+                                        <p>The Association of Professional Debt Collection Agency Malaysia (APDCAM)
+                                            unites debt collection agencies, fostering a
+                                            unified goal and voice for its members. It provides a platform for
+                                            communication and collaboration, promoting ethical
+                                            standards and professionalism to enhance the industry.</p>
+                                    </div>
+
+                                    <div class="text-2xl rotate-45">
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- <li
+                            class="work_card app relative bg-sectionColor dark:bg-darkSectionColor p-5 rounded-2xl border border-transparent hover:border-primaryColor duration-300 overflow-hidden lg:p-8">
+                            <img src="images/fulhive.png" alt="recent works" class="rounded-2xl w-full">
+
+                            <div class="absolute left-0 right-0 bottom-[-100%] p-5 lg:p-8">
+                                <div
+                                    class="flex items-center justify-between bg-gradient-to-r from-primaryColorLight to-primaryColor text-whiteColor p-5 rounded-t-2xl">
+                                    <div>
+                                        <p class="text-2xl lg:text-3xl font-bold">Apps</p>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                                    </div>
+
+                                    <div class="text-2xl rotate-45">
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li> -->
+
+                        <!-- branding -->
+                        <li
+                            class="work_card branding relative bg-sectionColor dark:bg-darkSectionColor p-5 rounded-2xl border border-transparent hover:border-primaryColor duration-300 overflow-hidden lg:p-8">
+                            <img src="images/porto.png" alt="recent works" class="rounded-2xl w-full">
+
+                            <div class="absolute left-0 right-0 bottom-[-100%] p-5 lg:p-8">
+                                <div
+                                    class="flex items-center justify-between bg-gradient-to-r from-primaryColorLight to-primaryColor text-whiteColor p-5 rounded-t-2xl">
+                                    <div>
+                                        <p class="text-2xl lg:text-3xl font-bold">Portfolio</p>
+                                        <p>This portfolio website showcases my backend development expertise through the
+                                            services, professional experience,
+                                            education, recent work, and contacts sections. The site highlights my
+                                            expertise in creating scalable systems, API
+                                            development, and database optimization, which provides a comprehensive
+                                            overview of my capabilities and work.</p>
+                                    </div>
+
+                                    <div class="text-2xl rotate-45">
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- design -->
+                        <li
+                            class="work_card design relative bg-sectionColor dark:bg-darkSectionColor p-5 rounded-2xl border border-transparent hover:border-primaryColor duration-300 overflow-hidden lg:p-8">
+                            <img src="images/fulhive.png" alt="recent works" class="rounded-2xl w-full">
+
+                            <div class="absolute left-0 right-0 bottom-[-100%] p-5 lg:p-8">
+                                <div
+                                    class="flex items-center justify-between bg-gradient-to-r from-primaryColorLight to-primaryColor text-whiteColor p-5 rounded-t-2xl">
+                                    <div>
+                                        <p class="text-2xl lg:text-3xl font-bold">Fulhive</p>
+                                        <p>
+                                            A web application that streamlines the storage and organization of goods in
+                                            rented warehouse spaces. It supports two
+                                            main user roles: Warehouse Renters, who are warehouse owners managing rented
+                                            spaces, tracking activities, and
+                                            facilitating seamless transactions with sellers; and Sellers, who store
+                                            goods sourced from marketplaces like Shopee,
+                                            Lazada, and TikTok. The platform allows sellers to organize goods, track
+                                            inventory, monitor shipments, and integrate
+                                            marketplace transactions efficiently.</p>
+                                    </div>
+
+                                    <div class="text-2xl rotate-45">
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education -->
+        <section id="exp_edu" class="bg-sectionColor dark:bg-darkSectionColor">
+            <div class="container w-full grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Experience -->
+                <div>
+                    <div class="exp_top flex items-center gap-3">
+                        <div class=" text-2xl text-primaryColorLight md:text-3xl lg:text-4xl">
+                            <i class="fa-solid fa-medal"></i>
+                        </div>
+
+                        <h2 class="subtitle">Experience</h2>
+                    </div>
+
+                    <div class="my-10 space-y-5 md:space-y-10">
+                        <!-- card 1 -->
+                        <div
+                            class="exp_card exp_edu_card bg-whiteColor dark:bg-darkBodyColor p-5 rounded-2xl hover:bg-primaryColorLight dark:hover:bg-primaryColorLight duration-300">
+                            <p class="text-primaryColorLight text-sm font-bold pb-3">Dec 2023 - Present <span
+                                    class="text-sm text-cyan-400">(Remote)</span></p>
+                            <p class="text-xl font-bold uppercase lg:text-2xl xl:text-3xl">Fullstack Developer</p>
+                            <p>Wave Infotech Solution, Malaysia</p>
+                        </div>
+
+                        <!-- card 2 -->
+                        <div
+                            class="exp_card exp_edu_card bg-whiteColor dark:bg-darkBodyColor p-5 rounded-2xl hover:bg-primaryColorLight dark:hover:bg-primaryColorLight duration-300">
+                            <p class="text-primaryColorLight text-sm font-bold pb-3">Mei 2022 - Aug 2023 <span
+                                    class="text-sm text-cyan-400">(Remote)</span></p>
+                            <p class="text-xl font-bold uppercase lg:text-2xl xl:text-3xl">Backend Developer</p>
+                            <p>PT Nap Info Lintas Nusa, Jakarta</p>
+                        </div>
+
+                        <!-- card 3 -->
+                        <div
+                            class="exp_card exp_edu_card bg-whiteColor dark:bg-darkBodyColor p-5 rounded-2xl hover:bg-primaryColorLight dark:hover:bg-primaryColorLight duration-300">
+                            <p class="text-primaryColorLight text-sm font-bold pb-3">Nov 2021 - Mei 2022 <span
+                                    class="text-sm text-cyan-400">(Remote)</span></p>
+                            <p class="text-xl font-bold uppercase lg:text-2xl xl:text-3xl">Backend Developer</p>
+                            <p>Ceria Nugraha Indotama, Jakarta</p>
+                        </div>
+
+                        <!-- card 4-->
+                        <div
+                            class="exp_card exp_edu_card bg-whiteColor dark:bg-darkBodyColor p-5 rounded-2xl hover:bg-primaryColorLight dark:hover:bg-primaryColorLight duration-300">
+                            <p class="text-primaryColorLight text-sm font-bold pb-3">Des 2020 - Apr 2022 <span
+                                    class="text-sm text-cyan-400">(Onsite)</span></p>
+                            <p class="text-xl font-bold uppercase lg:text-2xl xl:text-3xl">Backend Developer</p>
+                            <p>Cv Trustme, Cirebon</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div>
+                    <div class="edi_top flex items-center gap-3">
+                        <div class=" text-2xl text-primaryColorLight md:text-3xl lg:text-4xl">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+
+                        <h2 class="subtitle">Education</h2>
+                    </div>
+
+                    <div class="my-10 space-y-5 md:space-y-10">
+                        <!-- card 1 -->
+                        <div
+                            class="edu_card exp_edu_card bg-whiteColor dark:bg-darkBodyColor p-5 rounded-2xl hover:bg-primaryColorLight dark:hover:bg-primaryColorLight duration-300">
+                            <p class="text-primaryColorLight text-sm font-bold pb-3">Sep 2017 - Dec 2021 </p>
+                            <p class="text-xl font-bold uppercase lg:text-2xl xl:text-3xl">Bachelor of Computer Science
+                            </p>
+                            <p>STMIK IKMI Cirebon, Cirebon</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="container" id="skills">
+            <div class="skills__top flex flex-col items-center gap-5 text-center">
+                <h2 class="subtitle">My Skills</h2>
+                <p class="max-w-2xl">Mastering modern backend technologies while continuously expanding my technical
+                    horizons. My skillset combines
+                    established development practices with emerging technologies to deliver reliable, future-ready
+                    solutions.</p>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-5 md:gap-10 mt-10">
+                <!-- php -->
+                <div class="skills_card max-w-44 w-full">
+                    <div
+                        class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center px-4 py-7 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent duration-300">
+                        <img src="images/php.svg" alt="php" class="max-w-24">
+                    </div>
+                    <p class="text-center text-primaryColorLight mt-3 capitalize">PHP</p>
+                </div>
+
+                <!-- laravel -->
+                <div class="skills_card max-w-44 w-full">
+                    <div
+                        class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center px-4 py-7 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent duration-300">
+                        <img src="images/laravel.svg" alt="laravel" class="max-w-24">
+                    </div>
+                    <p class="text-center text-primaryColorLight mt-3 capitalize">Laravel</p>
+                </div>
+
+                <!-- javascript -->
+                <div class="skills_card max-w-44 w-full">
+                    <div
+                        class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center px-4 py-7 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent duration-300">
+                        <img src="images/javascript.svg" alt="javascript" class="max-w-24">
+                    </div>
+                    <p class="text-center text-primaryColorLight mt-3 capitalize">Javascript</p>
+                </div>
+
+                <!-- bootstrap -->
+                <div class="skills_card max-w-44 w-full">
+                    <div
+                        class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center px-4 py-7 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent duration-300">
+                        <img src="images/bootstrap.png" alt="bootstrap" class="max-w-24">
+                    </div>
+                    <p class="text-center text-primaryColorLight mt-3 capitalize">Bootstrap</p>
+                </div>
+
+                <!-- tailwind -->
+                <div class="skills_card max-w-44 w-full">
+                    <div
+                        class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center px-4 py-7 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent duration-300">
+                        <img src="images/tailwind.png" alt="tailwind" class="max-w-24">
+                    </div>
+                    <p class="text-center text-primaryColorLight mt-3 capitalize">Tailwind</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="container" id="contact">
+            <div class="flex flex-col md:flex-row-reverse gap-16 md:gap-5 md:items-center">
+
+
+                <!-- contact form -->
+                <form
+                    class="contact__item flex-1 bg-sectionColor border-none dark:bg-darkSectionColor dark:border  dark:border-primaryColor px-5 py-10 rounded-3xl space-y-3">
+                    <!-- subtitle & description -->
+                    <div class="flex flex-col">
+                        <h2 class="subtitle">Let's work together!</h2>
+                        <p class="max-w-2xl pt-3">Ready to transform your ideas into robust technical solutions? Whether
+                            you need database optimization, API development,
+                            or comprehensive system documentation, I'm here to help. Let's collaborate to create
+                            efficient, scalable solutions that
+                            drive your business forward. Reach out using the form below, and I'll get back to you asap.
+                        </p>
+                    </div>
+
+                    <div class="space-y-3 mt-7">
+                        <div class="flex flex-col md:flex-row items-center gap-3">
+                            <input type="text" placeholder="First name" name="firstname" autocomplete="off">
+                            <input type="text" placeholder="Last name" name="lastname" autocomplete="off">
+                        </div>
+                        <div class="flex flex-col md:flex-row items-center gap-3">
+                            <input type="text" placeholder="Email" name="email" autocomplete="off">
+                            <input type="text" placeholder="Phone" name="phone" autocomplete="off">
+                        </div>
+                        <div class="space-y-3">
+                            <textarea name="message" placeholder="Message" rows="5"></textarea>
+                            <button class="btn"><span class="z-10">Submit</span></button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- content -->
+                <div class="flex-1 space-y-7 md:space-y-10 lg:pl-20 xl:pl-40">
+                    <div class="contact__form flex items-start gap-4">
+                        <div
+                            class="text-whiteColor bg-gradient-to-b from-primaryColor to-primaryColorLight h-10 w-10 lg:h-14 lg:w-14 rounded-full grid place-items-center">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="space-y-1">
+                            <p class="text-sm">Phone</p>
+                            <a href="https://wa.me/62859106840999" target="_blank"
+                                class="font-bold hover:text-primaryColorLight duration-300 cursor-pointer">
+                                +62 859106840999
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact__form flex items-start gap-4">
+                        <div
+                            class="text-whiteColor bg-gradient-to-b from-primaryColor to-primaryColorLight h-10 w-10 lg:h-14 lg:w-14 rounded-full grid place-items-center">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="space-y-1">
+                            <p class="text-sm">Email</p>
+                            <a href="mailto:devjulia65@gmail.com"
+                                class="font-bold hover:text-primaryColorLight duration-300 cursor-pointer">
+                                devjulia65@gmail.com
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact__form flex items-start gap-4">
+                        <div
+                            class="text-whiteColor bg-gradient-to-b from-primaryColor to-primaryColorLight h-10 w-10 lg:h-14 lg:w-14 rounded-full grid place-items-center">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="space-y-1">
+                            <p class="text-sm">Address</p>
+                            <p class="font-bold hover:text-primaryColorLight duration-300 cursor-pointer">
+                                Cirebon, Jawa Barat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer id="footer" class="bg-sectionColor dark:bg-darkSectionColor py-10">
+        <div class="container flex flex-col items-center gap-5">
+            <div class="py-5">
+                <img src="images/logo-black.png" alt="logo" id="logo"
+                    class="w-20 md:w-14 h-200 rounded-full object-cover">
+            </div>
+
+            <div>
+                <ul class="flex flex-wrap justify-center items-center space-x-3">
+                    <li>
+                        <a href="#quality_services" class="nav-link">Services</a>
+                    </li>
+                    <li>
+                        <a href="#recent_works" class="nav-link">Works</a>
+                    </li>
+                    <li>
+                        <a href="#exp_edu" class="nav-link">Resume</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="text-primaryColorLight row">
+                <p>&copy; 2025 All right reserved by <span class="font-bold">Julia | Lightcode.</span></p>
+            </div>
+        </div>
+    </footer>
+    <!-- scroll up -->
+    <a href="#" id="scroll-up"
+        class="fixed right-10 -bottom-1/2 bg bg-primaryColor px-4 py-2 rounded-full text-lg text-whiteColor z-50 hover:-translate-y-1 ease-in duration-300"><i
+            class="fa-solid fa-arrow-up"></i>
+    </a>
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- main.js -->
+    <script src="main.js"></script>
+</body>
+
+</html>
